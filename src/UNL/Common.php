@@ -17,7 +17,7 @@ class UNL_Common
     static public function getDataDir()
     {
         if ('@@DATA_DIR@@' == '@@DATA'.'_DIR@@') {
-            return dirname(__FILE__) . '/data/';
+            return dirname(dirname(dirname(__FILE__))) . '/data/';
         }
         return '@@DATA_DIR@@/UNL_Common/data/';
     }
