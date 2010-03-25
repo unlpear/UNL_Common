@@ -14,9 +14,9 @@ require_once dirname(__FILE__).'/../../Common.php';
  */
 class UNL_Common_Building_East
 {
-	public $codes = array();
-	
-	/**
+    public $codes = array();
+    
+    /**
      * Constructor connects to database and loads codes and names.
      * @return bool False on error
      */
