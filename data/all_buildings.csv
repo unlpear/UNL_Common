@@ -43,15 +43,12 @@ Warehouse 1,W1,East Campus
 Terry M. Carpenter Telecommunications Center,TELC,East Campus
 Warehouse 2,W2,East Campus
 Varner Hall,VARH,"Sites in Lincoln, NE"
-Insecticide Storage Building,ISTO,East Campus
 Home Economics Building,HECO,East Campus
 McCollum Hall,LAW,East Campus
 Nebraska East Union,NEU,East Campus
 Barkley Memorial Center,BKC,East Campus
 Veterinary Diagnostic Building,VDC,East Campus
 Veterinary Medicine and Biomedical Sciences Hall,VBS,East Campus
-Animal Research Facility,ARF,East Campus
-Animal Holding Facility,AHOF,East Campus
 Plant Sciences Hall,PLSH,East Campus
 Agronomy & Horticulture Greenhouse 4,AHG4,East Campus
 Orchard House,ORCH,East Campus
@@ -60,25 +57,21 @@ Splinter Laboratories,SPL,East Campus
 Sewage Sterilization Plant,SEW,East Campus
 Agronomy & Horticulture Greenhouse 3,AHG3,East Campus
 Plant Pathology Greenhouse,PPG,East Campus
-Chemical Storage Building,CSTO,East Campus
 National Agroforestry Center Storage Building - USDA,NAST,East Campus
 Animal Science Complex,ANSC,East Campus
 Welpton Courtroom Building,WELC,East Campus
 Agronomy & Horticulture Outstate Testing Laboratory,AHTL,East Campus
 Animal Science Loafing Sheds,LOAF,East Campus
 Agronomy & Horticulture Physiology Building,AHPH,East Campus
-Waste Accumulation Building,WAST,East Campus
 USDA Physiology Building - USDA,USDP,East Campus
 Landscape Services East Campus,LSEC,East Campus
 Nebraska Statewide Arboretum Greenhouse,NSAG,East Campus
-Pesticide Storage Building,PEST,East Campus
 Perrin Porch,PER,East Campus
 Agronomy & Horticulture/Forestry Shops,AHFS,East Campus
 Library Depository Retrieval Facility,LDR,East Campus
 Quilt Center,QSC,East Campus
 Community Garden Shed,GRDN,East Campus
 Morrison Center,MOLR,East Campus
-Modular Laboratory,MODL,East Campus
 Animal Science Storage Building,ASTO,East Campus
 Campus Rec Equipment Building 5 - East Campus Rec Fields,ORB5,East Campus
 Campus Rec Equipment Building 6 - East Campus Tennis Courts,ORB6,East Campus
@@ -209,7 +202,6 @@ U Street Apartments,UST,City Campus
 Vine Street Apartments West,2222,City Campus
 Vine Street Apartments East,2244,City Campus
 Stadium Drive Parking Garage,SDPG,City Campus
-Landscape Services Chemical Storage Building,LSCS,City Campus
 UNL Credit Union,UNLCU,City Campus
 Andersen Hall,ANDN,City Campus
 420 University Terrace,420,City Campus
@@ -220,7 +212,6 @@ Othmer Hall,OTHM,City Campus
 Hewit Place,HEWP,Leased "Sites in Lincoln, NE"
 Mary Riepma Ross Media Arts Center-Van Brunt Visitors Center,RVB,City Campus
 17th & R Parking Garage,17PG,City Campus
-Hazardous Materials Facility,HZM,City Campus
 Nebraska Champions Club,NECH,City Campus
 The Courtyards,CORT,City Campus
 Jackie Gaughan Multicultural Center,GAUN,City Campus
