@@ -1,69 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package packagerversion="1.8.0alpha1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+<package version="2.1" xmlns="http://pear.php.net/dtd/package-2.1" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.1     http://pear.php.net/dtd/package-2.1.xsd">
  <name>UNL_Common</name>
  <channel>pear.unl.edu</channel>
- <summary>Common elements for the University of Nebraska-Lincoln</summary>
- <description>This package contains commonly used elements for the University of Nebraska-Lincoln: Buildings</description>
+ <summary>Common elements for the University of Nebraska-Lincoln
+</summary>
+ <description>
+This package contains commonly used elements for the University of Nebraska-Lincoln: Buildings</description>
  <lead>
   <name>Brett Bieber</name>
   <user>saltybeagle</user>
-  <email>bbieber@unlnotes.unl.edu</email>
+  <email>brett.bieber@gmail.com</email>
   <active>yes</active>
  </lead>
- <date>2009-01-07</date>
- <time>14:28:26</time>
+ <date>2010-06-15</date>
+ <time>10:28:02</time>
  <version>
-  <release>0.4.2</release>
-  <api>0.4.0</api>
+  <release>0.5.0</release>
+  <api>0.5.0</api>
  </version>
  <stability>
-  <release>beta</release>
-  <api>beta</api>
+  <release>alpha</release>
+  <api>alpha</api>
  </stability>
  <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
- <notes>
-Add MOLR.
- </notes>
+ <notes>Change database usage to PDO::SQlite
+Package source refactoring.
+Use Pyrus to package.
+
+Package UNL_Common API release notes for version 0.1.0.</notes>
  <contents>
-  <dir baseinstalldir="UNL" name="/">
-   <dir name="Common">
-    <dir name="Building">
-     <file name="City.php" role="php" />
-     <file name="East.php" role="php" />
-    </dir> <!-- /Common/Building -->
-    <dir name="examples">
-     <file name="Building.php" role="php" />
-    </dir> <!-- /Common/examples -->
-    <file name="Building.php" role="php" />
-    <file name="Colleges.php" role="php" />
-   </dir> <!-- /Common -->
-   <dir name="data">
-    <file name="building_city.csv" role="data" />
-    <file name="building_east.csv" role="data" />
-    <file name="unl_common.sqlite" role="data" />
-   </dir> <!-- /data -->
-   <dir name="tests">
-    <file name="UNL_Common_BuildingTest.php" role="test" />
-    <file name="UNL_Common_Building_CityTest.php" role="test" />
-    <file name="UNL_Common_Building_EastTest.php" role="test" />
-    <file name="UNL_Common_CollegesTest.php" role="test" />
-   </dir> <!-- /tests -->
-   <file name="Common.php" role="php">
-    <tasks:replace from="@@DATA_DIR@@" to="data_dir" type="pear-config" />
-   </file>
-  </dir> <!-- / -->
+  <dir name="/">
+   <dir name="data" baseinstalldir="/">
+    <file role="data" name="all_buildings.csv"/>
+    <file role="data" name="building_addresses.csv"/>
+    <file role="data" name="building_city.csv"/>
+    <file role="data" name="building_east.csv"/>
+    <file role="data" name="unl_common.sqlite"/>
+   </dir>
+   <dir name="examples">
+    <file role="doc" name="Building.php"/>
+   </dir>
+   <dir name="src" baseinstalldir="/">
+    <dir name="UNL">
+     <dir name="Common">
+      <dir name="Building">
+       <file role="php" name="City.php"/>
+       <file role="php" name="East.php"/>
+      </dir>
+      <file role="php" name="Building.php"/>
+      <file role="php" name="Colleges.php"/>
+     </dir>
+     <file role="php" name="Common.php"/>
+    </dir>
+   </dir>
+   <dir name="tests" baseinstalldir="/">
+    <file role="test" name="UNL_Common_BuildingTest.php"/>
+    <file role="test" name="UNL_Common_Building_CityTest.php"/>
+    <file role="test" name="UNL_Common_Building_EastTest.php"/>
+    <file role="test" name="UNL_Common_CollegesTest.php"/>
+   </dir>
+  </dir>
  </contents>
  <dependencies>
   <required>
    <php>
-    <min>5.0.0</min>
+    <min>5.2.0</min>
    </php>
    <pearinstaller>
-    <min>1.4.3</min>
+    <min>1.4.0</min>
    </pearinstaller>
   </required>
  </dependencies>
- <phprelease />
+ <phprelease/>
  <changelog>
   <release>
    <version>

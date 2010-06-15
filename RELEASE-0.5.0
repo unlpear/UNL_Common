@@ -1,1 +1,3 @@
-Package UNL_Common release notes for version 0.1.0.
+Change database usage to PDO::SQlite
+Package source refactoring.
+Use Pyrus to package.

@@ -21,6 +21,9 @@ class UNL_Common
 
     static public function getDataDir()
     {
+        if (file_exists(dirname(dirname(dirname(__FILE__))) . '/data/UNL_Common/pear.unl.edu')) {
+            return dirname(dirname(dirname(__FILE__))) . '/data/UNL_Common/pear.unl.edu/';
+        }
         if (file_exists(dirname(dirname(dirname(__FILE__))) . '/data/UNL_Common')) {
             return dirname(dirname(dirname(__FILE__))) . '/data/UNL_Common/data/';
         }
