@@ -33,7 +33,7 @@ class UNL_Common_Building_East
     protected function _checkDB()
     {
        if (!UNL_Common::tableExists('building_east')) {
-            UNL_Common::getDB()->queryExec(UNL_Common_Building_East::getTableDefinition());
+            UNL_Common::getDB()->exec(UNL_Common_Building_East::getTableDefinition());
             UNL_Common::importCSV('building_east', UNL_Common::getDataDir().'building_east.csv');
         }
     }

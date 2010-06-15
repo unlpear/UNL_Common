@@ -34,7 +34,7 @@ class UNL_Common_Building_City
     protected function _checkDB()
     {
        if (!UNL_Common::tableExists('building_city')) {
-            UNL_Common::getDB()->queryExec(UNL_Common_Building_City::getTableDefinition());
+            UNL_Common::getDB()->exec(UNL_Common_Building_City::getTableDefinition());
             UNL_Common::importCSV('building_city', UNL_Common::getDataDir().'building_city.csv');
         }
     }
