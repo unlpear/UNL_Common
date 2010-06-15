@@ -21,10 +21,10 @@ class UNL_Common
 
     static public function getDataDir()
     {
-        if ('@@DATA_DIR@@' == '@@DATA'.'_DIR@@') {
-            return dirname(dirname(dirname(__FILE__))) . '/data/';
+        if (file_exists(dirname(dirname(dirname(__FILE__))) . '/data/UNL_Common')) {
+            return dirname(dirname(dirname(__FILE__))) . '/data/UNL_Common/data/';
         }
-        return '@@DATA_DIR@@/UNL_Common/data/';
+        return dirname(dirname(dirname(__FILE__))) . '/data/';
     }
     
     static protected function __connect()
