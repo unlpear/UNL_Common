@@ -16,6 +16,6 @@ $compatible->dependencies['required']->package['pear2.php.net/PEAR2_HTTP_Request
 */
 $package->dependencies['required']->php = '5.2.0';
 $compatible->dependencies['required']->php = '5.2.0';
-$package->dependencies['required']->pearinstaller = '1.4.0';
-$compatible->dependencies['required']->pearinstaller = '1.4.0';
+$package->dependencies['required']->pearinstaller = '2.0.0a1';
+$compatible->dependencies['required']->pearinstaller = '2.0.0a1';
 ?>
