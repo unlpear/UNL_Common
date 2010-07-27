@@ -12,10 +12,10 @@ This package contains commonly used elements for the University of Nebraska-Linc
   <email>brett.bieber@gmail.com</email>
   <active>yes</active>
  </lead>
- <date>2010-06-15</date>
- <time>10:28:02</time>
+ <date>2010-07-27</date>
+ <time>14:50:40</time>
  <version>
-  <release>0.5.0</release>
+  <release>0.5.1</release>
   <api>0.5.0</api>
  </version>
  <stability>
@@ -23,9 +23,12 @@ This package contains commonly used elements for the University of Nebraska-Linc
   <api>alpha</api>
  </stability>
  <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
- <notes>Change database usage to PDO::SQlite
-Package source refactoring.
-Use Pyrus to package.
+ <notes>Buildings Added:
+
+- Jackie Gaughan Multicultural Center
+- Physical Sciences Building
+- Robert E. Knoll Residential Center
+
 
 Package UNL_Common API release notes for version 0.1.0.</notes>
  <contents>
