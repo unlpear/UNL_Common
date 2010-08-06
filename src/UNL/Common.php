@@ -18,6 +18,8 @@ class UNL_Common
     static public function getDriver()
     {
         if (!isset(self::$driver)) {
+            require_once 'UNL/Common/DataDriverInterface.php';
+            require_once 'UNL/Common/JSONDataDriver.php';
             self::$driver = new UNL_Common_JSONDataDriver();
         }
         return self::$driver;
