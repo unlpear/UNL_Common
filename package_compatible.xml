@@ -12,8 +12,8 @@ This package contains commonly used elements for the University of Nebraska-Linc
   <email>brett.bieber@gmail.com</email>
   <active>yes</active>
  </lead>
- <date>2010-07-27</date>
- <time>17:06:32</time>
+ <date>2010-08-06</date>
+ <time>15:39:25</time>
  <version>
   <release>0.5.1</release>
   <api>0.5.0</api>
@@ -37,6 +37,8 @@ Package UNL_Common API release notes for version 0.1.0.</notes>
    <file role="test" name="test/UNL_Common/pear.unl.edu/UNL_Common/pear.unl.edu/UNL_Common/pear.unl.edu/UNL_Common_Building_EastTest.php"/>
    <file role="test" name="test/UNL_Common/pear.unl.edu/UNL_Common/pear.unl.edu/UNL_Common/pear.unl.edu/UNL_Common_Building_CityTest.php"/>
    <file role="test" name="test/UNL_Common/pear.unl.edu/UNL_Common/pear.unl.edu/UNL_Common/pear.unl.edu/UNL_Common_BuildingTest.php"/>
+   <file role="php" name="php/php/UNL/Common/JSONDataDriver.php"/>
+   <file role="php" name="php/php/UNL/Common/DataDriverInterface.php"/>
    <file role="php" name="php/php/UNL/Common/Colleges.php"/>
    <file role="php" name="php/php/UNL/Common/Building/East.php"/>
    <file role="php" name="php/php/UNL/Common/Building/City.php"/>
@@ -73,6 +75,8 @@ Package UNL_Common API release notes for version 0.1.0.</notes>
    <install name="php/php/UNL/Common/Building/City.php" as="UNL/Common/Building/City.php"/>
    <install name="php/php/UNL/Common/Building/East.php" as="UNL/Common/Building/East.php"/>
    <install name="php/php/UNL/Common/Colleges.php" as="UNL/Common/Colleges.php"/>
+   <install name="php/php/UNL/Common/DataDriverInterface.php" as="UNL/Common/DataDriverInterface.php"/>
+   <install name="php/php/UNL/Common/JSONDataDriver.php" as="UNL/Common/JSONDataDriver.php"/>
    <install name="test/UNL_Common/pear.unl.edu/UNL_Common/pear.unl.edu/UNL_Common/pear.unl.edu/UNL_Common_BuildingTest.php" as="pear.unl.edu/UNL_Common_BuildingTest.php"/>
    <install name="test/UNL_Common/pear.unl.edu/UNL_Common/pear.unl.edu/UNL_Common/pear.unl.edu/UNL_Common_Building_CityTest.php" as="pear.unl.edu/UNL_Common_Building_CityTest.php"/>
    <install name="test/UNL_Common/pear.unl.edu/UNL_Common/pear.unl.edu/UNL_Common/pear.unl.edu/UNL_Common_Building_EastTest.php" as="pear.unl.edu/UNL_Common_Building_EastTest.php"/>
