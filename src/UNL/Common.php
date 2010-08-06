@@ -8,7 +8,7 @@ class UNL_Common
      *
      * @var UNL_Common_DataDriverInterface
      */
-    public $driver;
+    public static $driver;
 
     /**
      * Get the current data driver
@@ -17,10 +17,10 @@ class UNL_Common
      */
     static public function getDriver()
     {
-        if (!isset($driver)) {
+        if (!isset(self::$driver)) {
             self::$driver = new UNL_Common_JSONDataDriver();
         }
-        return $driver;
+        return self::$driver;
     }
 
 }
