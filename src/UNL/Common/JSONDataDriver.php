@@ -25,7 +25,7 @@ class UNL_Common_JSONDataDriver implements UNL_Common_DataDriverInterface
     {
         if ($contents = file_get_contents($uri)) {
             // try decoding it
-            $data = json_decode($contents);
+            $data = json_decode($contents, true);
             if (is_array($data)) {
                 return $data;
             }
