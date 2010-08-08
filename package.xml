@@ -12,33 +12,29 @@ This package contains commonly used elements for the University of Nebraska-Linc
   <email>brett.bieber@gmail.com</email>
   <active>yes</active>
  </lead>
- <date>2010-08-06</date>
- <time>15:39:25</time>
+ <date>2010-08-08</date>
+ <time>07:01:36</time>
  <version>
-  <release>0.5.1</release>
-  <api>0.5.0</api>
+  <release>0.6.0</release>
+  <api>0.6.0</api>
  </version>
  <stability>
   <release>alpha</release>
   <api>alpha</api>
  </stability>
  <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
- <notes>Buildings Added:
+ <notes>Major overhaul:
 
-- Jackie Gaughan Multicultural Center
-- Physical Sciences Building
-- Robert E. Knoll Residential Center
+* Building data is no longer bundled with the package
+* The new DataDriverInterface allows custom data sources
+* Upgrades no longer required to retrieve campus building data
 
-
-Package UNL_Common API release notes for version 0.1.0.</notes>
+UNL_Common is now driver-based. The default driver for building data uses a
+JSON output from the campus tour.</notes>
  <contents>
   <dir name="/">
    <dir name="data" baseinstalldir="/">
-    <file role="data" name="all_buildings.csv"/>
     <file role="data" name="building_addresses.csv"/>
-    <file role="data" name="building_city.csv"/>
-    <file role="data" name="building_east.csv"/>
-    <file role="data" name="unl_common.sqlite"/>
    </dir>
    <dir name="examples">
     <file role="doc" name="Building.php"/>

@@ -12,25 +12,25 @@ This package contains commonly used elements for the University of Nebraska-Linc
   <email>brett.bieber@gmail.com</email>
   <active>yes</active>
  </lead>
- <date>2010-08-06</date>
- <time>15:39:25</time>
+ <date>2010-08-08</date>
+ <time>07:01:36</time>
  <version>
-  <release>0.5.1</release>
-  <api>0.5.0</api>
+  <release>0.6.0</release>
+  <api>0.6.0</api>
  </version>
  <stability>
   <release>alpha</release>
   <api>alpha</api>
  </stability>
  <license uri="http://www.opensource.org/licenses/bsd-license.php">New BSD License</license>
- <notes>Buildings Added:
+ <notes>Major overhaul:
 
-- Jackie Gaughan Multicultural Center
-- Physical Sciences Building
-- Robert E. Knoll Residential Center
+* Building data is no longer bundled with the package
+* The new DataDriverInterface allows custom data sources
+* Upgrades no longer required to retrieve campus building data
 
-
-Package UNL_Common API release notes for version 0.1.0.</notes>
+UNL_Common is now driver-based. The default driver for building data uses a
+JSON output from the campus tour.</notes>
  <contents>
   <dir name="/">
    <file role="test" name="test/UNL_Common/pear.unl.edu/UNL_Common/pear.unl.edu/UNL_Common/pear.unl.edu/UNL_Common_CollegesTest.php"/>
@@ -45,11 +45,7 @@ Package UNL_Common API release notes for version 0.1.0.</notes>
    <file role="php" name="php/php/UNL/Common/Building.php"/>
    <file role="php" name="php/php/UNL/Common.php"/>
    <file role="doc" name="doc/UNL_Common/pear.unl.edu/UNL_Common/pear.unl.edu/examples/examples/Building.php"/>
-   <file role="data" name="data/UNL_Common/pear.unl.edu/UNL_Common/pear.unl.edu/unl_common.sqlite"/>
-   <file role="data" name="data/UNL_Common/pear.unl.edu/UNL_Common/pear.unl.edu/building_east.csv"/>
-   <file role="data" name="data/UNL_Common/pear.unl.edu/UNL_Common/pear.unl.edu/building_city.csv"/>
    <file role="data" name="data/UNL_Common/pear.unl.edu/UNL_Common/pear.unl.edu/building_addresses.csv"/>
-   <file role="data" name="data/UNL_Common/pear.unl.edu/UNL_Common/pear.unl.edu/all_buildings.csv"/>
   </dir>
  </contents>
  <dependencies>
@@ -64,11 +60,7 @@ Package UNL_Common API release notes for version 0.1.0.</notes>
  </dependencies>
  <phprelease>
   <filelist>
-   <install name="data/UNL_Common/pear.unl.edu/UNL_Common/pear.unl.edu/all_buildings.csv" as="pear.unl.edu/all_buildings.csv"/>
    <install name="data/UNL_Common/pear.unl.edu/UNL_Common/pear.unl.edu/building_addresses.csv" as="pear.unl.edu/building_addresses.csv"/>
-   <install name="data/UNL_Common/pear.unl.edu/UNL_Common/pear.unl.edu/building_city.csv" as="pear.unl.edu/building_city.csv"/>
-   <install name="data/UNL_Common/pear.unl.edu/UNL_Common/pear.unl.edu/building_east.csv" as="pear.unl.edu/building_east.csv"/>
-   <install name="data/UNL_Common/pear.unl.edu/UNL_Common/pear.unl.edu/unl_common.sqlite" as="pear.unl.edu/unl_common.sqlite"/>
    <install name="doc/UNL_Common/pear.unl.edu/UNL_Common/pear.unl.edu/examples/examples/Building.php" as="pear.unl.edu/examples/examples/Building.php"/>
    <install name="php/php/UNL/Common.php" as="UNL/Common.php"/>
    <install name="php/php/UNL/Common/Building.php" as="UNL/Common/Building.php"/>

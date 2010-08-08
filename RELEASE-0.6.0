@@ -1,0 +1,5 @@
+Major overhaul:
+
+* Building data is no longer bundled with the package
+* The new DataDriverInterface allows custom data sources
+* Upgrades no longer required to retrieve campus building data
