@@ -21,6 +21,12 @@ class UNL_Common_JSONDataDriver implements UNL_Common_DataDriverInterface
         return $this->retrieveJSONData($uri);
     }
 
+    function getLincolnBuildings()
+    {
+        $uri = self::$tour_uri.'?view=lincolnbuildings&format=json';
+        return $this->retrieveJSONData($uri);
+    }
+
     protected function retrieveJSONData($uri)
     {
         if ($contents = file_get_contents($uri)) {
