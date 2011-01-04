@@ -12,10 +12,10 @@ This package contains commonly used elements for the University of Nebraska-Linc
   <email>brett.bieber@gmail.com</email>
   <active>yes</active>
  </lead>
- <date>2010-08-08</date>
- <time>07:01:36</time>
+ <date>2011-01-04</date>
+ <time>15:14:19</time>
  <version>
-  <release>0.6.0</release>
+  <release>0.6.1</release>
   <api>0.6.0</api>
  </version>
  <stability>
@@ -23,11 +23,7 @@ This package contains commonly used elements for the University of Nebraska-Linc
   <api>alpha</api>
  </stability>
  <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
- <notes>Major overhaul:
-
-* Building data is no longer bundled with the package
-* The new DataDriverInterface allows custom data sources
-* Upgrades no longer required to retrieve campus building data
+ <notes>Speed improvements when retrieving building data with the JSON driver.
 
 UNL_Common is now driver-based. The default driver for building data uses a
 JSON output from the campus tour.</notes>
@@ -45,6 +41,7 @@ JSON output from the campus tour.</notes>
       <dir name="Building">
        <file role="php" name="City.php"/>
        <file role="php" name="East.php"/>
+       <file role="php" name="Lincoln.php"/>
       </dir>
       <file role="php" name="Building.php"/>
       <file role="php" name="Colleges.php"/>
