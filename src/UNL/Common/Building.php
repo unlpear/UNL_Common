@@ -15,7 +15,8 @@ require_once 'UNL/Common/Building/Lincoln.php';
  * 
  * @package UNL_Common
  */
-class UNL_Common_Building {
+class UNL_Common_Building
+{
     
     var $codes = array();
     
@@ -45,9 +46,8 @@ class UNL_Common_Building {
     {
         if (isset($this->codes[$code])) {
             return true;
-        } else {
-            return false;
         }
+        return false;
     }
     
     /**
@@ -66,9 +66,8 @@ class UNL_Common_Building {
             return 'city';
         } elseif (isset($lincoln->codes[$code])) {
             return 'lincoln';
-        } else {
-            return false;
         }
+        return false;
     }
 }
 
