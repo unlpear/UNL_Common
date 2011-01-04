@@ -21,16 +21,7 @@ class UNL_Common_Building {
     
     function __construct()
     {
-        $east = new UNL_Common_Building_East();
-        $city = new UNL_Common_Building_City();
-        $lincoln = new UNL_Common_Building_Lincoln();
-        $this->codes = $east->codes;
-        foreach ($city->codes as $code=>$bldg) {
-            $this->codes[(string)$code] = $bldg;
-        }
-        foreach ($lincoln->codes as $code=>$bldg) {
-            $this->codes[(string)$code] = $bldg;
-        }
+        $this->codes = UNL_Common::getDriver()->getAllBuildings();
         asort($this->codes,SORT_STRING);
     }
     
