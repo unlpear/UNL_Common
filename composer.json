@@ -1,0 +1,7 @@
+{
+    "name": "unl/common",
+    "autoload": {
+        "psr-0": { "": "src/" }
+    },
+    "include-path": ["src"]
+}
